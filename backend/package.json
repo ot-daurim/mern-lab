@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend REST API for a full-stack MERN application built with Node.js, Express.js, and MongoDB.",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "rest-api",
+    "backend",
+    "mern"
+  ],
+  "license": "ISC",
+  "author": "Torekhan Daurim",
+  "type": "module",
+  "main": "server.ja",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
