@@ -15,10 +15,11 @@ class App extends React.Component {
     this.state = {
       players: [],
       currentPlayer: {}
-    }
+    };
+    this.updateCurrentPlayer = this.updateCurrentPlayer.bind(this)
   }
   componentDidMount() {
-    const url = 'http://localhost:8000/players';
+    const url = 'http://localhost:3030/players';
 
     axios.get(url)
     .then((Response) => {
@@ -37,7 +38,12 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col s12">Menu</div>
+          <nav>
+            <div className="nav-wrapper blue darkern-1">
+              <a href="/" className='brand-logo'>Soccer Managmant</a>
+            </div>
+          </nav>
+          
         </div>
         <div className="row">
           <div className="col s3">

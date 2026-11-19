@@ -8,8 +8,11 @@ const PlayerList = (props) => {
                     <a 
                         href="#" 
                         className="collection-item" 
-                        key={item.id} 
-                        onClick={props.updateCurrentPlayer.bind(this.item)}
+                        key={item._id} 
+                        onClick={(event) => {
+                            event.preventDefault();
+                            props.updateCurrentPlayer(item); 
+                        }}
                     >
                         {item.firstName} {item.lastName}
                     </a>
